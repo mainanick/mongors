@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import chalk from "chalk";
+import rimraf from "rimraf";
 import cp from "child_process";
 import fs from "fs";
 import meow from "meow";
@@ -12,7 +13,8 @@ import {
   DEFAULT_OPTIONS,
   DEFAULT_PORT,
   isWindows,
-  where
+  where,
+  thunkDataPath
 } from "./utils";
 
 const log = console.log;
@@ -30,10 +32,6 @@ const cli = meow(
 `,
   {
     flags: {
-      keep: {
-        type: "boolean",
-        alias: "k"
-      },
       port: {
         type: "number",
         alias: "p",

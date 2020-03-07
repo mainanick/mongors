@@ -18,7 +18,6 @@ export const DEFAULT_FORK = false;
 export const DEFAULT_HOSTNAME =
   process.platform === "win32" ? os.hostname() : "localhost";
 export const DEFAULT_OPTIONS: mongoRsOptions = {
-  keep: DEFAULT_KEEP,
   port: DEFAULT_PORT
 };
 
