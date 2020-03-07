@@ -1,5 +1,5 @@
 {
-  "name": "mongors",
+  "name": "@nickmaina/mongors",
   "private": false,
   "version": "0.0.1",
   "main": "dist/rs.js",
@@ -14,7 +14,8 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepublishOnly": "npm run build",
-    "lint": "prettier --write src/**/*.ts"
+    "lint": "prettier --write src/**/*.ts",
+    "publish": "'npm publish --access=public"
   },
   "dependencies": {
     "chalk": "^3.0.0",

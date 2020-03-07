@@ -9,7 +9,7 @@ Won't work in ci/cd env
 DBPath will be in `node_modules/.cache/mongors/`
 
 ```sh
-yarn add --dev mongors
+yarn add --dev @nickmaina/mongors
 ```
 
 ```js
