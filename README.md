@@ -20,11 +20,9 @@ yarn add --dev mongors
     Options
       --keep, -k  Keep the data folder if present
       --port, -p Port
-      --dbpath, -d Mongo Data Path
 
     Examples
       $ mongors --keep
-      $ mongors --port 31104
-      $ mongors --keep --dbpath C:\data\
+      $ mongors --keep --port 31104
 
 ```
