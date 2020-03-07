@@ -14,8 +14,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepublishOnly": "npm run build",
-    "lint": "prettier --write src/**/*.ts",
-    "publish": "'npm publish --access=public"
+    "lint": "prettier --write src/**/*.ts"
   },
   "dependencies": {
     "chalk": "^3.0.0",
