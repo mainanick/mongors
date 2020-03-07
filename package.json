@@ -1,0 +1,32 @@
+{
+  "name": "mongors",
+  "private": false,
+  "version": "0.0.1",
+  "main": "dist/rs.js",
+  "keywords": [
+    "mongo",
+    "mongod",
+    "replicaset"
+  ],
+  "bin": {
+    "mongors": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "find-cache-dir": "^3.3.0",
+    "meow": "^6.0.1",
+    "mongodb-topology-manager": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/find-cache-dir": "^3.2.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
