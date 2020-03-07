@@ -25,10 +25,10 @@ const cli = meow(
       $ mongors
  
     Options
-      --keep, -k  Keep the data folder if present
- 
+      --port, -p Port
+
     Examples
-      $ mongors --keep
+      $ mongors --port 31104
 `,
   {
     flags: {
